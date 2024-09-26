@@ -89,7 +89,7 @@ After creating these tables, run `DESC` to confirm the table structure. If the d
 2. **Navigate to the Project Folder**:
    Navigate to the folder where your project is located and where the `requirements.txt` file is stored:
    ```bash
-   cd school_management_system  
+   cd School-Management-System  
    ```
 
 3. **Install Dependencies**:
@@ -131,10 +131,10 @@ Below is the SQL code for inserting sample data into each of the tables:
 
 ### 1. **`students` table**
 ```sql
-INSERT INTO students (studentid, firstname, lastname, birthdate, gender, class) 
+INSERT INTO students (studentid, firstname, lastname, birthdate, gender, class)
 VALUES (1, 'John', 'Doe', TO_DATE('2005-05-15', 'YYYY-MM-DD'), 'M', '10A');
 
-INSERT INTO students (studentid, firstname, lastname, birthdate, gender, class) 
+INSERT INTO students (studentid, firstname, lastname, birthdate, gender, class)
 VALUES (2, 'Jane', 'Smith', TO_DATE('2006-09-23', 'YYYY-MM-DD'), 'F', '10B');
 
 COMMIT;
@@ -142,10 +142,10 @@ COMMIT;
 
 ### 2. **`enrollments` table**
 ```sql
-INSERT INTO enrollments (enrollmentid, studentid, classid, enrollmentdate) 
+INSERT INTO enrollments (enrollmentid, studentid, classid, enrollmentdate)
 VALUES (1, 1, 101, TO_DATE('2022-08-15', 'YYYY-MM-DD'));
 
-INSERT INTO enrollments (enrollmentid, studentid, classid, enrollmentdate) 
+INSERT INTO enrollments (enrollmentid, studentid, classid, enrollmentdate)
 VALUES (2, 2, 102, TO_DATE('2022-09-01', 'YYYY-MM-DD'));
 
 COMMIT;
@@ -153,10 +153,10 @@ COMMIT;
 
 ### 3. **`teachers` table**
 ```sql
-INSERT INTO teachers (teacherid, firstname, lastname, subject) 
+INSERT INTO teachers (teacherid, firstname, lastname, subject)
 VALUES (1, 'Emily', 'Brown', 'Mathematics');
 
-INSERT INTO teachers (teacherid, firstname, lastname, subject) 
+INSERT INTO teachers (teacherid, firstname, lastname, subject)
 VALUES (2, 'Michael', 'Johnson', 'Physics');
 
 COMMIT;
@@ -164,10 +164,10 @@ COMMIT;
 
 ### 4. **`classes` table**
 ```sql
-INSERT INTO classes (classid, classname, teacherid) 
+INSERT INTO classes (classid, classname, teacherid)
 VALUES (101, '10A', 1);
 
-INSERT INTO classes (classid, classname, teacherid) 
+INSERT INTO classes (classid, classname, teacherid)
 VALUES (102, '10B', 2);
 
 COMMIT;
@@ -175,10 +175,10 @@ COMMIT;
 
 ### 5. **`attendance` table**
 ```sql
-INSERT INTO attendance (attendanceid, studentid, classid, attendancedate, status) 
+INSERT INTO attendance (attendanceid, studentid, classid, attendancedate, status)
 VALUES (1, 1, 101, TO_DATE('2023-09-01', 'YYYY-MM-DD'), 'P');
 
-INSERT INTO attendance (attendanceid, studentid, classid, attendancedate, status) 
+INSERT INTO attendance (attendanceid, studentid, classid, attendancedate, status)
 VALUES (2, 2, 102, TO_DATE('2023-09-01', 'YYYY-MM-DD'), 'A');
 
 COMMIT;
@@ -186,10 +186,10 @@ COMMIT;
 
 ### 6. **`comments` table**
 ```sql
-INSERT INTO comments (commentid, studentid, comment_text, created_at) 
+INSERT INTO comments (commentid, studentid, comment_text, created_at)
 VALUES (1, 1, 'Excellent performance in Mathematics.', SYSTIMESTAMP);
 
-INSERT INTO comments (commentid, studentid, comment_text, created_at) 
+INSERT INTO comments (commentid, studentid, comment_text, created_at)
 VALUES (2, 2, 'Needs improvement in Physics.', SYSTIMESTAMP);
 
 COMMIT;
