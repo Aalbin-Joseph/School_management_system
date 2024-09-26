@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'school_management_system.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'xe',  
-        'USER': 'system',
-        'PASSWORD': '280896',
-        'HOST': 'localhost',
-        'PORT': '1521',
+        'NAME': 'your_database_name',  # replace with your DB name
+        'USER': 'your_db_user',        # replace with your DB username
+        'PASSWORD': 'your_password',   # replace with your DB password
+        'HOST': 'localhost',           # leave as localhost if local installation
+        'PORT': '1521',                # Oracle DB default port
     }
 }
 
